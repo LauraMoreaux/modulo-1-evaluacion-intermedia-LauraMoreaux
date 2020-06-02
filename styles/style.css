@@ -1,6 +1,100 @@
+* {
+  box-sizing: border;
+  color: inherit;
+  font-family: var(--primary-font);
+  list-style-type: none;
+  text-decoration: none;
+}
 
+:root {
+  --primary-font: "Rubik", sans-serif;
+  --menu-color: #4a4a4a;
+  --back-color: #3cdbc0;
+  --text-color: #ffffff;
+}
 
-La paleta de colores usados son:
-#4a4a4a (Texto del menú)
-#3CDBC0 (Color de fondo de la página)
-#FFFFFF (Color de texto de "Creando diversidad digital")
+.wrapper {
+  width: 100%;
+  max-width: 1200;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+/*controlar cajas*/
+
+header {
+  border: solid 1px yellow;
+}
+
+footer {
+  border: solid 1px green;
+}
+
+.wrapper {
+  border: solid 1px black;
+}
+
+/*HEADER*/
+
+.header-logo {
+  width: 155px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header .wrapper {
+  width: 100%;
+  max-width: 1200;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  padding: 0;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.menu li {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--menu-color);
+  margin-right: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  background-color: var(--back-color);
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  margin: 0 px;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer span {
+  display: inline-block;
+}
